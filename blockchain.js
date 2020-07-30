@@ -1,14 +1,14 @@
-function registro() {
+function registroDoAnimal() {
     event.preventDefault();
-    if ($("#_criador").val().length != 42) {
-      $("#_criador").focus();
+    if ($("#_tutor","#_criador").val().length != 42) {
+      $("#_tutor","#_criador").focus();
       alert("Endereço inválido");
       return;
     }
   
-    if (!$("#_criador").val().startsWith("0x")) {
+    if (!$("#_tutor","#_criador").val().startsWith("0x")) {
       alert("Endereço inválido");
-      $("#_criador").focus();
+      $("#_tutor","#_criador").focus();
       return;
     }
     
@@ -18,7 +18,7 @@ function registro() {
     }
   
     contratoComSignatario
-      .registro($("#_nome").val(), $("#_especie").val(), $("#_sexo").val(), $("#_criador").val(), $("#_tutor").val(), $("#_LocalDeNascimento").val(), $("#_dataDeNascimento").val(), $("#_registro").val() * 1)
+      .registroDoAnimal($("#_nome").val(), $("#_especie").val(), $("#_sexo").val(), $("#_criador").val(), $("#_tutor").val(), $("#_LocalDeNascimento").val(), $("#_dataDeNascimento").val(), $("#_registro").val() * 1)
       .then((transacao) => {
         $("#descricaoStatusTransacoes").html("Transação enviada. Aguarde pela mineração...");
         $("#statusTransacoes").toggle();

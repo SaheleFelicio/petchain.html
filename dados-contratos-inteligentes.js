@@ -1,5 +1,53 @@
-var enderecoContrato = "0x31fC6cd83E17620ecdaE8e2c5b8234405A1b8776";
+var enderecoContrato = "0x789DBcB6923BC51A507B9C9D04Be802D75334644";
 var abiContrato = [
+			{
+			"inputs": [
+				{
+					"internalType": "string",
+					"name": "_nome",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "_especie",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "_sexo",
+					"type": "string"
+				},
+				{
+					"internalType": "address",
+					"name": "_criador",
+					"type": "address"
+				},
+				{
+					"internalType": "address",
+					"name": "_tutor",
+					"type": "address"
+				},
+				{
+					"internalType": "string",
+					"name": "_LocalDeNascimento",
+					"type": "string"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_dataDeNascimento",
+					"type": "uint256"
+				},
+				{
+					"internalType": "string",
+					"name": "_certificado",
+					"type": "string"
+				}
+			],
+			"name": "registroDoAnimal",
+			"outputs": [],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
 		{
 			"inputs": [
 				{
@@ -47,59 +95,11 @@ var abiContrato = [
 				},
 				{
 					"internalType": "string",
-					"name": "registro",
+					"name": "certificado",
 					"type": "string"
 				}
 			],
 			"stateMutability": "view",
-			"type": "function"
-		},
-		{
-			"inputs": [
-				{
-					"internalType": "string",
-					"name": "_nome",
-					"type": "string"
-				},
-				{
-					"internalType": "string",
-					"name": "_especie",
-					"type": "string"
-				},
-				{
-					"internalType": "string",
-					"name": "_sexo",
-					"type": "string"
-				},
-				{
-					"internalType": "address",
-					"name": "_criador",
-					"type": "address"
-				},
-				{
-					"internalType": "address",
-					"name": "_tutor",
-					"type": "address"
-				},
-				{
-					"internalType": "string",
-					"name": "_LocalDeNascimento",
-					"type": "string"
-				},
-				{
-					"internalType": "uint256",
-					"name": "_dataDeNascimento",
-					"type": "uint256"
-				},
-				{
-					"internalType": "string",
-					"name": "_registro",
-					"type": "string"
-				}
-			],
-			"name": "registroDoAnimal",
-			"outputs": [],
-			"stateMutability": "nonpayable",
 			"type": "function"
 		},
 		{
