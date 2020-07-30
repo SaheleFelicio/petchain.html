@@ -45,5 +45,6 @@ function gerenciaTrocaDeSelecaoDeContas(_contas) {
       console.log("gerenciaTrocaDeSelecaoDeContas objects", contas, contaAtual, signatario, contratoComSignatario);
       $("#btnRegistrar").prop("disabled", false);
     }
-  }
 }
+}
+var abiContratoInteligente;
