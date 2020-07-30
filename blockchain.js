@@ -45,7 +45,7 @@ function registroDoAnimal(_registro) {
       $("#descricaoStatusTransacoes").html("Transação enviada. Aguarde pela mineração...");
       $("#statusTransacoes").show();
     contratoComSignatario
-      .registroDoAnimal($(_nome).val(), $(_especie).val(), $(_sexo).val(), $(_criador).val(), $(_tutor).val(), $(_LocalDeNascimento).val(), $(dataDeNascimento).val(), ($(_certificado).val() * 1))
+      .registroDoAnimal($(_nome).val(), $(_especie).val(), $(_sexo).val(), $(_criador).val(), $(_tutor).val(), $(_LocalDeNascimento).val(), $(_dataDeNascimento).val(), ($(_certificado).val() * 1))
       .then((transacao) => {
         transacao
           .wait()
