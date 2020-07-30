@@ -1,14 +1,14 @@
 function registro() {
     event.preventDefault();
-    if ($("#_tutor","#_criador").val().length != 42) {
-      $("#_tutor","#_criador").focus();
+    if ($("#_criador").val().length != 42) {
+      $("#_criador").focus();
       alert("Endereço inválido");
       return;
     }
   
-    if (!$("#_tutor","#_criador").val().startsWith("0x")) {
+    if (!$("#_criador").val().startsWith("0x")) {
       alert("Endereço inválido");
-      $("#_tutor","#_criador").focus();
+      $("#_criador").focus();
       return;
     }
     
